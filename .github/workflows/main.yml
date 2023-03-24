@@ -13,8 +13,7 @@ jobs:
       - name: Run local k6 test
         uses: k6io/action@v0.1
         with:
-          filename: k6/test.js
-          flags: --out json=results.json
+          filename: k6/test.js --out json=results.json
           
       - name: Upload performance test results
         uses: actions/upload-artifact@v3
