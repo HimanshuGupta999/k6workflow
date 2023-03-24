@@ -1,11 +1,5 @@
 name: Cypress GitHub Actions
-on:
-  push:
-    branches:
-      - k6workflow
-  pull_request:
-    branches:
-      - k6workflow
+on: [push]
 
 jobs:
   k6_load_test:
