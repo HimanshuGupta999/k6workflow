@@ -1,5 +1,5 @@
 name: Cypress GitHub Actions
-'on':
+on:
   push:
     branches:
       - k6workflow
