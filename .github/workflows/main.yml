@@ -13,10 +13,9 @@ jobs:
       - name: Run local k6 test
         uses: grafana/k6-action@v0.2.0
         with:
-          filename: k6/test.js
-          flags: --out json=results.json
-          
-      - name: Upload performance test results
+          filename: k6/reqes.js
+
+      - name: Store performance test results
         uses: actions/upload-artifact@v3
         with:
           name: k6-report

@@ -22,6 +22,7 @@ export let options = {
 		{ duration: '2m', target: 0 },
 	],
 	thresholds: {
+        'http_req_failed': ['rate<0.10'],
 		'http_req_duration': ['p(95)<1000'], // 95 percent of response times must be below 1000ms
 		'http_req_duration{status:200}': ['max>=0'],
         'http_req_duration{status:201}': ['max>=0'],
