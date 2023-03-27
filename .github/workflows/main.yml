@@ -19,5 +19,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: k6-report
-          path: results.json
+          path: result.html
 
