@@ -1,4 +1,4 @@
-name: Cypress GitHub Actions
+name: GitHub Actions with K6
 on: [push]
 
 jobs:
